@@ -111,7 +111,7 @@ export class DateTimePickerModal extends React.PureComponent {
     if (onHide) {
       onHide(this.didPressConfirm, this.state.currentDate);
     }
-    this.setState({ isPickerVisible: false });
+    this.setState({ isPickerVisible: false, isInitialized: false });
   };
 
   handleChange = (event, date) => {
